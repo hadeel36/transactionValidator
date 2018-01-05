@@ -1,0 +1,29 @@
+{
+  "name": "transactionvalidator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "watch": "babel -w -d dist/",
+    "build": "babel src --out-dir dist",
+    "serve": "babel src -w -d dist/ | nodemon --watch dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadeel36/transactionValidator.git"
+  },
+  "author": "Hadeel Khawaldeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hadeel36/transactionValidator/issues"
+  },
+  "homepage": "https://github.com/hadeel36/transactionValidator#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "nodemon": "^1.11.0"
+  }
+}
