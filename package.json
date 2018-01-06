@@ -4,7 +4,6 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "watch": "babel -w -d dist/",
     "build": "babel src --out-dir dist",
     "serve": "babel src -w -d dist/ | nodemon --watch dist"
   },
