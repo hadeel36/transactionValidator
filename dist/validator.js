@@ -9,10 +9,58 @@ var validator = function () {
     _classCallCheck(this, validator);
   }
 
+  /*
+  * Method to test float numbers
+  */
+
+
   _createClass(validator, [{
     key: "isFloat",
     value: function isFloat(number) {
       return Number(number) === number && number % 1 !== 0;
+    }
+
+    /*
+    * Method to test decimal numbers
+    */
+
+  }, {
+    key: "isNumber",
+    value: function isNumber(number) {
+      var numExp = new RegExp(/^[0-9]+$/);
+      return numExp.test(number);
+    }
+
+    /*
+    * Method to test string input
+    */
+
+  }, {
+    key: "isString",
+    value: function isString(string) {
+      var stringExp = new RegExp(/^[a-zA-Z\-!?\s]*$/);
+      return stringExp.test(string);
+    }
+
+    /*
+    * Method to test boolean input
+    */
+
+  }, {
+    key: "isBoolean",
+    value: function isBoolean(variable) {
+      return typeof variable === "boolean";
+    }
+
+    /*
+    * Method to test string const of letters and numbers
+    */
+
+  }, {
+    key: "isNumAndLetter",
+    value: function isNumAndLetter(string) {
+      var numberString = new RegExp('^[a-zA-Z0-9\-!?]*$');
+      return numberString.test(string);
     }
   }]);
 
